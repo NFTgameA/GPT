@@ -1,0 +1,50 @@
+{
+  "name": "project-ai-sass",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.26.2",
+    "@prisma/client": "^5.5.2",
+    "@radix-ui/react-avatar": "^1.0.4",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.5",
+    "ai": "^2.2.21",
+    "axios": "^1.6.0",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "lucide-react": "^0.292.0",
+    "next": "^14.0.3",
+    "next-themes": "^0.2.1",
+    "nextjs-toploader": "^1.6.4",
+    "openai": "^4.16.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.0",
+    "react-syntax-highlighter": "^15.5.0",
+    "tailwind-merge": "^2.0.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.4.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/nprogress": "^0.2.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-syntax-highlighter": "^15.5.10",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "postcss": "^8",
+    "prisma": "^5.5.2",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
