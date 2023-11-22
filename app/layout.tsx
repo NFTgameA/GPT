@@ -2,14 +2,22 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
-import { ClerkProvider } from '@clerk/nextjs'
+
 import { Toaster } from "@/components/ui/toaster"
 import { ThemeProvider } from '@/components/ui/theme-provider'
 
 
 //process
+// import { ClerkProvider } from '@clerk/nextjs'
+// import NextTopLoader from 'nextjs-toploader';
 
-import NextTopLoader from 'nextjs-toploader';
+
+//
+import Web3ModalProvider from '@/context/Web3Modal'
+
+
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -27,24 +35,30 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider>
+    // <ClerkProvider>
       <html lang="en">
         <body className={inter.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-             <NextTopLoader />
-            {children}
-            <Toaster />
-          </ThemeProvider>
+        {/* <NextTopLoader /> */}
 
 
+          <Web3ModalProvider>
+
+
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+            
+              {children}
+              <Toaster />
+            </ThemeProvider>
+
+          </Web3ModalProvider>
 
         </body>
       </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   )
 }

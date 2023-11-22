@@ -4,8 +4,8 @@ import { useSidebarStore } from '@/store/sidebar-store'
 import React from 'react'
 import Logo from '../logo'
 import SidebarToggle from './sidebar-toggle'
-import { UserButton } from '@clerk/nextjs/app-beta'
-import { useUser } from '@clerk/nextjs/app-beta/client'
+// import { UserButton } from '@clerk/nextjs/app-beta'
+// import { useUser } from '@clerk/nextjs/app-beta/client'
 import { MAX_FREE_COUNTS } from '@/constants'
 import { Progress } from '../ui/progress'
 import ThemeToggle from './theme-toggle'
@@ -24,17 +24,17 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ className, isProPlan, userLimitCount }) => {
     const { isMinimal } = useSidebarStore()
 
-    const { user } = useUser()
-    useEffect(() => {
+    // const { user } = useUser()
+    // useEffect(() => {
 
-        console.log(user);
+    //     console.log(user);
 
 
 
-        return () => {
+    //     return () => {
 
-        }
-    }, [user])
+    //     }
+    // }, [user])
 
     return (
         <div className={cn(
@@ -66,7 +66,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, isProPlan, userLimitCount 
             )}>
                 <div className='mb-4 p-4 rounded-lg bg-gray-900'>
                     <div className='mb-4 flex items-center'>
-                        <UserButton afterSignOutUrl='/' />
+                        {/* <UserButton afterSignOutUrl='/' />
                         {
                             !isMinimal &&
                             <span className='text-sm ml-4'>
@@ -78,7 +78,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, isProPlan, userLimitCount 
 
 
                             </span>
-                        }
+                        } */}
                     </div>
                     {
                         !isMinimal &&
