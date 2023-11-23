@@ -13,7 +13,7 @@ const poppins = Poppins({
     variable: '--font-poppins',
     weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
   });
-const Logo: React.FC<LogoProps> = ({className  }) => {
+const Logo: React.FC<LogoProps> = ({ className  }) => {
     return (
         <div className={cn("flex items-center",
             className)}>

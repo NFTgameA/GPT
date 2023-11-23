@@ -6,8 +6,11 @@ const nextConfig = {
   
 //   assetPrefix: './',
   images:{
-    unoptimized:true
+    unoptimized:true,
+    domains: ["oaidalleapiprodscus.blob.core.windows.net"]
   },
+
+  
 
   // webpack5: true,
   // webpack: (config) => {

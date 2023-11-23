@@ -13,6 +13,7 @@ import SubscriptionButton from '../subscription-button'
 import NavBar from './navbar'
 
 import { useEffect } from 'react';
+import Link from "next/link"
 
 
 
@@ -23,18 +24,6 @@ interface SidebarProps {
 }
 const Sidebar: React.FC<SidebarProps> = ({ className, isProPlan, userLimitCount }) => {
     const { isMinimal } = useSidebarStore()
-
-    // const { user } = useUser()
-    // useEffect(() => {
-
-    //     console.log(user);
-
-
-
-    //     return () => {
-
-    //     }
-    // }, [user])
 
     return (
         <div className={cn(
@@ -47,7 +36,7 @@ const Sidebar: React.FC<SidebarProps> = ({ className, isProPlan, userLimitCount 
                     {
                         // nếu sidebar đang thu nhỏ lại thì ko hiện logo ra
                         !isMinimal &&
-                        <Logo></Logo>
+                        <Link href="../"><Logo></Logo></Link>
                     }
 
                     <SidebarToggle />

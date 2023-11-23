@@ -29,6 +29,13 @@ const ConversationPage = () => {
   } = useChat({
     api: "/api/conversation"
   });
+
+  const handleKeyDown = (e :any)  => {
+    if (e.key === 'Enter' && !e.shiftKey) {
+      e.preventDefault(); // Prevents newlines in the textarea
+      handleSubmit(e);
+    }
+  };
   
 
   //Kiểm tra xem đã hết hạn bản dùng thử 1/5 chưa
@@ -87,7 +94,7 @@ const ConversationPage = () => {
               </Button>
             </div>
           </>
-          : <ToolsNavigation />}
+          : <ToolsNavigation title="Conversation" />}
       </div>
       <div className="mb-[13px]">
         <form
@@ -98,7 +105,9 @@ const ConversationPage = () => {
             placeholder="Do you have any questions today?"
             value={input}
             className="min-h-1 resize-none"
+            onKeyDown={handleKeyDown}
             onChange={handleInputChange}
+            autoFocus
           />
           <Button
             type="submit"

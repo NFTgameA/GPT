@@ -17,7 +17,7 @@ const toolItemColorVariants = cva(
         video: "bg-amber-500",
         photo: "bg-violet-500",
         conversation: "bg-blue-500",
-        dex: "bg-somecolor-500",
+        dex: "bg-red-500",
       },
     },
     defaultVariants: {

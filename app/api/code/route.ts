@@ -10,11 +10,13 @@ const configuration = {
     apiKey: process.env.OPENAI_API_KEY
 }
 
+const openai = new OpenAI(configuration)
+
 const instructionMessage = {
     role: "system",
-    content: "You are DEXAITOOLs."
+    content: "You are a code generator with name DEXAITOOLs. You must answer only in markdown code snippets. Use code comments for explanations."
   };
-const openai = new OpenAI(configuration)
+  
 
 export async function POST(req: Request) {
 
