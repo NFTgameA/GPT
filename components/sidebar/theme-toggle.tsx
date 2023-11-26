@@ -14,7 +14,7 @@ const ThemeToggle = () => {
 
   return (
     <div
-      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       className={cn(
         "p-2 rounded-lg flex items-center bg-gray-900 w-full cursor-pointer",
         isMinimal && "w-14 h-14 justify-center"

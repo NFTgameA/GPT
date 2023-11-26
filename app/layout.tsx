@@ -11,8 +11,8 @@ import { ThemeProvider } from '@/components/ui/theme-provider'
 
 
 import Web3ModalProvider from '@/context/Web3Modal'
-import NextNProgressClient from '@/components/dashboard/process'
-
+// import NextNProgressClient from '@/components/dashboard/process'
+import NextTopLoader from 'nextjs-toploader';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={inter.className}>
 
 
-  
+
         <Web3ModalProvider>
           <ThemeProvider
             attribute="class"
@@ -47,7 +47,8 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-                  {/* <NextNProgressClient /> */}
+            {/* <NextTopLoader /> */}
+            {/* <NextNProgressClient /> */}
 
             {children}
             <Toaster />

@@ -109,10 +109,19 @@ body,
     .gradient-btn {
         @apply bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500;
     }
+    
+    .custom-w {
+        width:calc(100% - 400px);
+      }
     * {
         @apply border-border;
     }
     body {
         @apply bg-background text-foreground;
     }
+
+   
 }
+
+
+  

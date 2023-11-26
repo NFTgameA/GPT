@@ -30,14 +30,6 @@ const DardboardLayout = (props: {
 
         {/* //thêm padding bên trái với kích thước 20 đơn vị(mặc định là 80) trong chế độ màn hình lớn (viewport lớn hơn hoặc bằng lg) cho một phần tử CON có thuộc tính is-navbar-minimal. */}
         <main className="lg:bg-gray-950 lg:overflow-hidden lg:pl-80 [&:has([is-navbar-minimal])]:lg:pl-20 lg:pr-7 lg:py-7">
-          {/* <Sidebar
-        isProPlan={false}
-        className={cn(
-          'fixed left-20 z-20 w-80 hidden [&has([is-navbar-minimal]):w-fit]',
-          'lg:block'
-        )}
-        userLimitCount={0} /> */}
-
           <Sidebar
             isProPlan={isProPlan}
             userLimitCount={userLimitCount}
