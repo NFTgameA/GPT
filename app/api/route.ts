@@ -4,7 +4,7 @@ export async function GET(request: Request) {
       name: "TokenN",
       symbol: "FUD",
       description: "Just a test for how to name your token ;)",
-      image: "https://shdw-drive.genesysgo.net/ArP7jjhVZsp7vkzteU7mpKA1fyHRhv4ZBz6gR7MJ1JTC/logo.jpg"
+      image: "https://dataapi-f8d3b.web.app/usdc.jpg"
     }), {
       headers: {
         'Content-Type': 'application/json'
