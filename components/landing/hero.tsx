@@ -51,7 +51,10 @@ const Hero = () => {
                   </Button>
                 </Link>
                 <a href="#features" className="text-sm font-semibold leading-6 text-gray-400">
-                  Discover Brainfast AI <span aria-hidden="true">→</span>
+                  Twitter <span aria-hidden="true">→</span>
+                </a>
+                <a href="#features" className="text-sm font-semibold leading-6 text-gray-400">
+                  Telegram <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>

@@ -35,6 +35,7 @@
     "next-transition-bar": "^1.1.0",
     "nextjs-toploader": "^1.6.4",
     "openai": "^4.16.1",
+    "pino-pretty": "^10.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.48.2",
